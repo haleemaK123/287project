@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto+Condensed&display=swap');
+
+
+* {
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    background-color: #EEEEEE;
+}
+
+body::-webkit-scrollbar, body::-webkit-scrollbar-track {
+    width: 0px;
+}
+#columnTitles{
+    color:#176B87;
+}
+#navbar {
+    min-height: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    color: #EEEEEE;
+    background-color: #053B50;
+}
+
+.nameOfWebsite {
+    padding: 10px 0px 10px 15px;
+    font-size: 20px;
+    border-left: 2px #EEEEEE solid;
+    border-bottom: 2px #EEEEEE solid;
+}
+
+#navOptions {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navOptions a {
+    padding: 10px 0px 10px 15px;
+    color: #EEEEEE;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#navOptions a:hover {
+    color: #64CCC5;
+    padding-top: 5px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #EEEEEE;
+    background-color: #176B87;
+    padding: 0px 0 20px 0;
+}
+
+.tableTitle {
+    border-left: 2px #EEEEEE solid;
+    border-bottom: 2px #EEEEEE solid;
+    padding-left: 20px;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-right: 420px;
+    margin-top: 20px;
+}
+
+.tableDiv {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    border-radius: 7px;
+    max-height: 500px;
+    overflow-y: scroll;
+    height: 300px;
+    background-color: #EEEEEE;
+}
+
+.tableDiv::-webkit-scrollbar,  .tableDiv::-webkit-scrollbar-track {
+    width: 15px;
+    background-color: #EEEEEE;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.tableDiv::-webkit-scrollbar-thumb {
+    background-color: #176B87;
+    border-radius: 7px;
+    border: 5px #EEEEEE solid;
+}
+
+.licenseTable {
+    padding: 20px;
+    font-size: 20px;
+    color: #176B87;
+    background-color: #EEEEEE;
+    width: 500px;
+}
+
+
+.tableRow {
+    box-shadow: 5px 5px 5px #ccc;
+    border-radius: 7px;
+}
+
+td {
+    padding: 5px 25px 5px 25px;
+    text-align: center;
+    color: black;
+}
+
+.licenseTable button {
+    background-color: #176B87;
+    color: #EEEEEE;
+    font-size: 20px;
+    border: 2px #176B87 solid;
+    border-radius: 5px;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+.licenseTable button:hover {
+    background-color: #64CCC5;
+    color: #EEEEEE;
+    border-color: #64CCC5;
+    cursor: pointer;
+}
+
+.emailForm {
+    font-size: 20px;
+    color:#176B87;
+    background-color: #EEEEEE;
+    padding: 20px 20px 20px 20px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+#emailAddress {
+    color: #176B87;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#emailAddress:focus {
+    outline: none;
+}
+
+.emailForm textarea {
+    color: #176B87;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.emailForm textarea:focus {
+    outline: none;
+}
+
+.sendEmail {
+    color: #EEEEEE;
+    background-color: #176B87;
+    border: 2px #176B87 solid;
+    border-radius: 3px;
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.sendEmail:hover {
+    background-color: #64CCC5;
+    border-color: #64CCC5;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+
+
+#footer {
+    min-height: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    color: #EEEEEE;
+    background-color: #053B50;
+}

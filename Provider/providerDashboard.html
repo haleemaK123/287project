@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="providerDashboard.css">
+    <title>Rent a license</title>
+    <script src="providerCreateSerialNumber2.js"> </script>
+    <script src="retreiving.js"> </script>
+    <script src = "deletingLicense.js"></script>
+    <script src = "sendingEmail.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <p class="nameOfWebsite">Rent a license</p>
+        <div id="navOptions">
+            <a href="providerDashboard.html">
+                <p>Dashboard</p>
+            </a>
+            <a href="providerCreateSerialNumber.html">
+                <p>Create new license</p>
+            </a>
+            <a href="pinfoProvider.html">
+                <p>My profile</p>
+            </a>
+            <a href="../LandingPage/login.html">
+                <p>Logout</p>
+            </a>
+        </div>
+    </div>
+    <div> 
+       
+        <!-- <button type="button" id="getlicenses" onClick="retriveLicense()">get licenses</button> -->
+    </div>
+    <div id="content">
+        <div class="tableTitle">
+            <h2>My licenses</h2>
+        </div>
+        <div class="tableDiv">
+        <table id="licenseTable" >
+            <thead>
+            <tr id = "columnTitles">
+                <th>Serial Number</th>
+                <th>Provider</th>
+                <th>Rent Length (Days)</th>
+                <th>Price ($)</th>
+            </tr>
+        </thead>
+        <tbody>
+                <!-- <tr class="tableRow">
+                    <td>111111111</td>
+                    <td><button type="submit">Delete</button></td>
+                </tr>
+                <tr class="tableRow">
+                    <td>111111111</td>
+                    <td><button type="submit">Delete</button></td>
+                </tr>
+                <tr class="tableRow">
+                    <td>111111111</td>
+                    <td><button type="submit">Delete</button></td>
+                </tr>
+                <tr class="tableRow">
+                    <td>111111111</td> -->
+                    <!-- <td><button type="submit" id = "deleteButton">Delete</button></td> -->
+                </tr>
+              
+            </tbody>
+        </table>
+        </div>
+
+        <div class="tableTitle">
+            <h2>My clients</h2>
+        </div>
+        <div class="tableDiv">
+            <table class="licenseTable">
+                <tr>
+                    <th>Email</th>
+                    <th>License</th>
+                    <th>Cancel Subscription</th>
+                </tr>
+    
+                <div class="availableLiscences">
+                    <tr class="tableRow">
+                        <td>123@gmail.com</td>
+                        <td>111111111</td>
+                        <td><button type="submit">Cancel</button></td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>bruh@outlook.com</td>
+                        <td>111111111</td>
+                        <td><button type="submit">Cancel</button></td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>wow@yahoo.ca</td>
+                        <td>111111111</td>
+                        <td><button type="submit">Cancel</button></td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>qwerty@gmail.com</td>
+                        <td>111111111</td>
+                        <td><button type="submit">Cancel</button></td>
+                    </tr>
+                </div>
+            </table>
+            </div>
+
+            <div class="tableTitle">
+                <h2>Contact client</h2>
+            </div>
+            <form class="emailForm" action="post" method="post">
+                <label for="emailAddress">Recipient Email:</label>
+                <input type="text" id="emailAddress" name="email" placeholder="recipient@example.com" required>
+                <br>
+                <label for="emailContent">Email Content:</label>
+                <textarea id="emailContent" name="content" rows="5" placeholder="Type your email content here" required></textarea>
+                <br>
+                <input class="sendEmail" type="submit" value="Send Email" onclick = "sendingEmail()">
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>SOEN-287</p>
+        <p>Concordia University</p>
+    </div>
+</body>
+</html>

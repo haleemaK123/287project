@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a license</title>
+    <link href="pinfoProvider.css" rel="stylesheet">
+</head>
+<body>
+  <div id="navbar">
+    <p class="nameOfWebsite">Rent a license</p>
+    <div id="navOptions">
+        <a href="providerDashboard.html">
+            <p>Dashboard</p>
+        </a>
+        <a href="providerCreateSerialNumber.html">
+            <p>Create new license</p>
+        </a>
+        <a href="pinfoProvider.html">
+            <p>My profile</p>
+        </a>
+        <a href="../LandingPage/login.html">
+            <p>Logout</p>
+        </a>
+    </div>
+  </div>
+
+      <div id="content">
+        <div class="wrapper">
+            <form id="profile-form">
+              <h1>My Profile</h1>
+              <div class="input-box">
+                <input type="text" id="firstName" placeholder="First Name" required>
+              </div>
+              <div class="input-box">
+                <input type="text" id="lastName" placeholder="Last Name" required>
+              </div>
+              <div class="input-box">
+                <input type="text" id="username" placeholder="Username" required>
+              </div>
+              <div class="input-box">
+                <input type="email" id="email" placeholder="Email Address" required>
+              </div>
+              <button type="submit" class="btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>SOEN-287</p>
+        <p>Concordia University</p>
+    </div>
+
+    <script>
+        // Retrieve user registration data from localStorage
+        const userData = JSON.parse(localStorage.getItem('userData'));
+    
+        // Populate the input fields with user data
+        document.getElementById('firstName').value = userData.firstName;
+        document.getElementById('lastName').value = userData.lastName;
+        document.getElementById('username').value = userData.username;
+        document.getElementById('email').value = userData.email;
+    
+        // Event listener for form submission
+        document.getElementById('profile-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+    
+          // Get updated user data from input fields
+          const updatedUserData = {
+            firstName: document.getElementById('firstName').value,
+            lastName: document.getElementById('lastName').value,
+            username: document.getElementById('username').value,
+            email: document.getElementById('email').value,
+          };
+    
+          // Update the user data in localStorage
+          localStorage.setItem('userData', JSON.stringify(updatedUserData));
+    
+          // Provide feedback to the user that their information has been updated
+          alert('Profile updated successfully!');
+        });
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto+Condensed&display=swap');
+
+
+* {
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    background-color: #EEEEEE;
+    overflow: hidden;
+}
+
+#navbar {
+    min-height: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    color: #EEEEEE;
+    background-color: #053B50;
+}
+
+.nameOfWebsite {
+    padding: 10px 0px 10px 15px;
+    font-size: 20px;
+    border-left: 2px #EEEEEE solid;
+    border-bottom: 2px #EEEEEE solid;
+}
+
+#navOptions {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navOptions a {
+    padding: 10px 0px 10px 15px;
+    color: #EEEEEE;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#navOptions a:hover {
+    color: #64CCC5;
+    padding-top: 5px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #EEEEEE;
+    background-color: #176B87;
+    height: 100%;
+    padding: 0 0 20px 0;
+}
+
+.tableTitle {
+    border-left: 2px #EEEEEE solid;
+    border-bottom: 2px #EEEEEE solid;
+    padding-left: 20px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+#creatingSerialNumber {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    background-color: #EEEEEE;
+    color: #053B50;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    border-radius: 7px;
+    width: 400px;
+}
+
+.input {
+    background-color: #EEEEEE;
+    font-size: 20px;
+    border-left: 2px #053B50 solid;
+    border-bottom: 2px #053B50 solid;
+    border-top: none;
+    border-right: none;
+    color: #176B87;
+}
+
+.input:focus {
+    outline: none;
+}
+
+#createSerial {
+    font-size: 20px;
+    width: 200px;
+    margin-left: 100px;
+    border: 2px #053B50 solid;
+    color: #053B50;
+    background-color: #EEEEEE;
+    border-radius: 7px;
+    transition: 0.2s;
+}
+
+#createSerial:hover {
+    cursor: pointer;
+    background-color: #64CCC5;
+    color: #EEEEEE;
+    border-color: #64CCC5;
+}
+
+#footer {
+    min-height: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    color: #EEEEEE;
+    background-color: #053B50;
+}

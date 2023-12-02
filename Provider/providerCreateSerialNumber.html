@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="providerCreateSerialNumber.css">
+    <title>Rent a license</title>
+    <script src="providerCreateSerialNumber2.js"> </script>
+
+</head>
+<body>
+    <div id="navbar">
+        <p class="nameOfWebsite">Rent a license</p>
+        <div id="navOptions">
+            <a href="providerDashboard.html">
+                <p>Dashboard</p>
+            </a>
+            <a href="providerCreateSerialNumber.html">
+                <p>Create new license</p>
+            </a>
+            <a href="pinfoProvider.html">
+                <p>My profile</p>
+            </a>
+            <a href="../LandingPage/login.html">
+                <p>Logout</p>
+            </a>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="tableTitle">
+            <h2>Create new license</h2>
+        </div>
+        <form id = "creatingSerialNumber">
+            <label for="serialNumber">Serial Number:</label>
+            <input type = "text" class="input" id = "serialNumbertoBeCreated" placeholder="000000000"> 
+            <br/>
+            <label for="providerName">Provider:</label>
+            <input type = "text" class="input" id = "provider" placeholder="Name "> 
+            <br/>
+            <label for="serialNumberExpiry">Rent Length(Days):</label>
+            <input type = "text" class="input" id  = "rentLength" placeholder = "Days">
+            <br/>
+            <label for="Price">Price:</label>
+            <input type = "text" class="input" id  = "price" placeholder="$">
+            <br/>
+            <br/>
+            <button type="button" id="createSerial" onClick="createNewLicense()">Create new license</button>
+        </form>
+    </div>
+
+    <div id="footer">
+        <p>SOEN-287</p>
+        <p>Concordia University</p>
+
+
+    
+    </div>
+</body>
+</html>
